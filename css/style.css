@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+:root {
+  --main-color: #ff9800;
+  --main-font: "Hubballi", cursive;
+}
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+.landing-page {
+  min-height: 100vh;
+  background-image: url("../imgs/2.jpg");
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  padding: 10px;
+}
+
+header .logo {
+  font-family: var(--main-font);
+  font-size: 28px;
+  width: 300px;
+  padding: 15px;
+  font-weight: bold;
+}
+header .links {
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: var(--main-font);
+}
+
+header .links li {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+header .links li a {
+  font-family: var(--main-font);
+  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header .links li a:hover {
+  color: #f0a500;
+}
+.introduction {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+.introduction h1 {
+  font-family: var(--main-font);
+  font-size: 34px;
+  margin: 0 0 12px;
+}
+.introduction h1 span {
+  color: var(--main-color);
+}
+.introduction p {
+  font-family: var(--main-font);
+  line-height: 1.6;
+  font-size: 20px;
+  margin: 0;
+}
+
+.gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gallery h2,
+h3 {
+  font-family: var(--main-font);
+  font-weight: bold;
+  color: var(--main-color);
+  margin: 0 0 0 50px;
+  text-align: center;
+}
+.gallery h2 {
+  font-size: 30px;
+}
+.gallery h3 {
+  font-size: 20px;
+  color: black;
+}
+.gallery .images {
+  text-align: center;
+}
+.gallery .images img {
+  width: 200px;
+  padding: 3px;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+footer {
+  font-family: var(--main-font);
+  background-color: #333;
+  color: #eee;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
